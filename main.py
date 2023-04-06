@@ -38,3 +38,17 @@
 # sentenceList = sentence.split(" ")
 # result = {word:len(word) for word in sentenceList}
 # print(result)
+
+# """conveting celsius to fahrenheit"""
+# weatherCelcius = {
+#     "Monday": 12,
+#     "Tuesday": 13,
+#     "Wednesday": 11, 
+#     "Thursday": 15,
+#     "Friday": 17,
+#     "Saturday": 18, 
+#     "Sunday": 20
+# }
+
+# weatherFahrenheit = {day:((temp * 9/5) + 32) for (day, temp) in weatherCelcius.items()}
+# print(weatherFahrenheit)
