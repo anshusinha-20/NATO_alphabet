@@ -82,6 +82,7 @@ data = pandas.read_csv("nato_phonetic_alphabet.csv")
 
 """converting the dataframe to dictionary"""
 dataDict = {row.letter:row.code for (index, row) in data.iterrows()}
+dataDict[" "] = "Space"
 # print(dataDict)
 
 """taking input from the user and converting it into uppercase"""
