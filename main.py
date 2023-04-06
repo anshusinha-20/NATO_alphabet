@@ -25,5 +25,9 @@
 # students = ["Arup", "Bibek", "Aadarsh", "Anshu", "Anuragini", "Shruti", "Manisha", "Hemanshi"]
 
 # """creating dictionary using dictionary comprehension"""
-# studentsScore = {student: random.randint(80, 100) for student in students}
+# studentsScore = {student: random.randint(1, 100) for student in students}
 # print(studentsScore)
+
+# """creating a dictionary from dictionary"""
+# passedStudents = {student:value for (student, value) in studentsScore.items() if value > 60}
+# print(passedStudents)
