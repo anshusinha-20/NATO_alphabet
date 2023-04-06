@@ -7,3 +7,12 @@
 # numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 # evenNumbers = [num for num in numbers if num % 2 == 0]
 # print(evenNumbers)
+
+# """data overlap"""
+# with open("file1.txt") as file:
+#     l1 = file.readlines()
+# with open("file2.txt") as file:
+#     l2 = file.readlines()
+#
+# result = [int(num) for num in l1 if num in l2]
+# print(result)
