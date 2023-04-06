@@ -31,3 +31,10 @@
 # """creating a dictionary from dictionary"""
 # passedStudents = {student:value for (student, value) in studentsScore.items() if value > 60}
 # print(passedStudents)
+
+# """using Dictionary Comprehension to create a dictionary called result that takes each word in the given
+# sentence and calculates the number of letters in each word"""
+# sentence = input("Enter a sentence: ")
+# sentenceList = sentence.split(" ")
+# result = {word:len(word) for word in sentenceList}
+# print(result)
