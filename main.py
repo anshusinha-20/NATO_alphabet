@@ -17,13 +17,13 @@
 # result = [int(num) for num in l1 if num in l2]
 # print(result)
 
-"""creating random scores"""
-"""imported random module"""
-import random
+# """creating random scores"""
+# """imported random module"""
+# import random
 
-"""list of students"""
-students = ["Arup", "Bibek", "Aadarsh", "Anshu", "Anuragini", "Shruti", "Manisha", "Hemanshi"]
+# """list of students"""
+# students = ["Arup", "Bibek", "Aadarsh", "Anshu", "Anuragini", "Shruti", "Manisha", "Hemanshi"]
 
-"""creating dictionary using dictionary comprehension"""
-studentsScore = {student: random.randint(80, 100) for student in students}
-print(studentsScore)
+# """creating dictionary using dictionary comprehension"""
+# studentsScore = {student: random.randint(80, 100) for student in students}
+# print(studentsScore)
