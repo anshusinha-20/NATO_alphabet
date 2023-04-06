@@ -52,3 +52,19 @@
 
 # weatherFahrenheit = {day:((temp * 9/5) + 32) for (day, temp) in weatherCelcius.items()}
 # print(weatherFahrenheit)
+
+# """looping over pandas data frame"""
+# import pandas
+
+# weatherCelcius = {
+#     "day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+#     "temp": [12, 11, 13, 14, 18, 19, 20],
+# }
+
+# weatherDataFrame = pandas.DataFrame(weatherCelcius)
+# # print(weatherDataFrame)
+
+# for (index, row) in weatherDataFrame.iterrows():
+#     print(
+#         row.day, row.temp
+#         )
