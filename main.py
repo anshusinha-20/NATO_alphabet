@@ -68,3 +68,25 @@
 #     print(
 #         row.day, row.temp
 #         )
+
+#####
+
+# day26: the NATO alphabet project
+
+"""imported pandas module"""
+import pandas
+
+"""fetching the data from the csv file"""
+data = pandas.read_csv("nato_phonetic_alphabet.csv")
+# print(data)
+
+"""converting the dataframe to dictionary"""
+dataDict = {row.letter:row.code for (index, row) in data.iterrows()}
+# print(dataDict)
+
+"""taking input from the user and converting it into uppercase"""
+userInput = input("Enter a word: ").upper()
+
+"""creating the list according to the word"""
+natoList = [dataDict[letter] for letter in userInput if letter in userInput]
+print(natoList)
