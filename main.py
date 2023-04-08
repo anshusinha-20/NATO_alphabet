@@ -85,9 +85,17 @@ dataDict = {row.letter:row.code for (index, row) in data.iterrows()}
 dataDict[" "] = "Space"
 # print(dataDict)
 
-"""taking input from the user and converting it into uppercase"""
-userInput = input("Enter a word: ").upper()
+def generatePhoetic():
+    """taking input from the user and converting it into uppercase"""
+    userInput = input("Enter a word: ").upper()
 
-"""creating the list according to the word"""
-natoList = [dataDict[letter] for letter in userInput if letter in userInput]
-print(natoList)
+    """creating the list according to the word"""
+    try:
+        natoList = [dataDict[letter] for letter in userInput if letter in userInput]
+    except KeyError:
+        print("Sorry, only letter in the alphabet please.")
+        generatePhoetic()
+    else:
+        print(natoList)
+
+generatePhoetic()
